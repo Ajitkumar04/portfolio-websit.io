@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI/ML Projects & Research | Ajit Kumar</title>
+  <meta name="description" content="Explore production AI projects, LLM frameworks, computer vision models, and open source repositories built by Ajit Kumar.">
+  <link rel="canonical" href="https://ajitkumar04.github.io/projects.html">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fa-solid fa-brain"></i></div>
+        <span><span class="cfg-first-name">Ajit</span><span style="color: var(--text-accent);">.AI</span></span>
+      </a>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./index.html#skills" class="nav-link">Skills</a>
+        <a href="./projects.html" class="nav-link active">Projects</a>
+        <a href="./index.html#experience" class="nav-link">Experience</a>
+        <a href="./index.html#certifications" class="nav-link">Certifications</a>
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fa-solid fa-sun"></i></button>
+
+        <a href="./assets/files/resume.pdf" download class="btn btn-primary btn-sm cfg-resume-btn"><i class="fa-solid fa-download"></i> Resume</a>
+
+        <button id="mobile-menu-toggle" class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 7rem;">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Showcase</span>
+          <h2 class="section-title">All AI/ML Projects</h2>
+          <p class="section-subtitle">Search and filter through production models, LLM fine-tuning pipelines, and computer vision systems.</p>
+        </div>
+
+        <div class="projects-filter-bar">
+          <div class="project-categories">
+            <button class="filter-btn active" data-category="All">All Projects</button>
+            <button class="filter-btn" data-category="LLM & GenAI">LLM & GenAI</button>
+            <button class="filter-btn" data-category="Computer Vision">Computer Vision</button>
+            <button class="filter-btn" data-category="Deep Learning">Deep Learning</button>
+            <button class="filter-btn" data-category="MLOps">MLOps</button>
+            <button class="filter-btn" data-category="Data Science">Data Science</button>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="project-search-input" placeholder="Search projects...">
+          </div>
+        </div>
+
+        <div id="projects-grid" class="projects-grid">
+          <!-- Loaded dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border: none; padding-top: 0;">
+      <div>&copy; Ajit Kumar. All Rights Reserved.</div>
+      <div><a href="./index.html">Back to Home</a></div>
+    </div>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/filter.js"></script>
+  <script src="./assets/js/config-loader.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

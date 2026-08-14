@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Ajit Kumar | AI/ML Engineer Portfolio</title>
+  <meta name="title" content="Ajit Kumar | AI/ML Engineer Portfolio">
+  <meta name="description" content="AI/ML Engineer focused on Machine Learning, Generative AI, NLP, and intelligent systems. Skilled in Python, SQL, Scikit-learn, Pandas, NumPy, LangChain, LangGraph, RAG, and AI agents.">
+  <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, PyTorch, LLM, Computer Vision, MLOps, Portfolio, GitHub Pages">
+  <meta name="author" content="Ajit Kumar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ajitkumar04.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ajitkumar04.github.io/">
+  <meta property="og:title" content="Ajit Kumar | AI/ML Engineer">
+  <meta property="og:description" content="AI/ML Engineer focused on Machine Learning, Generative AI, NLP, and intelligent systems.">
+  <meta property="og:image" content="./assets/images/profile.png.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ajitkumar04.github.io/">
+  <meta name="twitter:title" content="Ajit Kumar | AI/ML Engineer">
+  <meta name="twitter:description" content="AI/ML Engineer focused on Machine Learning, Generative AI, NLP, and intelligent systems.">
+  <meta name="twitter:image" content="./assets/images/profile.png.png">
+
+  <!-- Google Fonts & Font Awesome CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ajit Kumar",
+    "jobTitle": "AI/ML Engineer",
+    "url": "https://ajitkumar04.github.io",
+    "sameAs": [
+      "https://github.com/Ajitkumar04",
+      "https://linkedin.com/in/alexvance-ai",
+      "https://twitter.com/alexvance_ai",
+      "https://kaggle.com/alexvance",
+      "https://huggingface.co/alexvance"
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Large Language Models",
+      "Computer Vision",
+      "Deep Learning",
+      "PyTorch",
+      "MLOps"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===============================================================
+       HEADER & NAVIGATION
+       =============================================================== -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fa-solid fa-brain"></i></div>
+        <span><span class="cfg-first-name">Ajit</span><span style="color: var(--text-accent);">.AI</span></span>
+      </a>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="./assets/files/resume.pdf" download class="btn btn-primary btn-sm cfg-resume-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===============================================================
+         HERO SECTION
+         =============================================================== -->
+    <section id="home" class="hero">
+      <canvas id="neural-canvas"></canvas>
+      <div class="container hero-content">
+        <div>
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span class="cfg-status">Open to AI/ML Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="animated-gradient-text cfg-name">Ajit Kumar</span>
+          </h1>
+
+          <div id="hero-typewriter" class="hero-typewriter"></div>
+
+          <p class="hero-description cfg-tagline">
+            Building practical AI/ML solutions with Python and Machine Learning
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View AI Projects
+            </a>
+            <a href="./assets/files/resume.pdf" download class="btn btn-secondary cfg-resume-btn">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="cfg-social-links hero-socials">
+            <!-- Populated from config.js -->
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-card">
+            <img src="./assets/images/profile.png.png" alt="Ajit Kumar AI/ML Engineer" class="hero-avatar-img cfg-profile-img" referrerPolicy="no-referrer">
+            
+            <div class="hero-floating-badge hero-badge-1">
+              <i class="fa-solid fa-microchip" style="color: var(--accent-secondary); font-size: 1.4rem;"></i>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Specialization</div>
+                <div style="font-weight: 700; font-size: 0.88rem;">AI & Machine Learning</div>
+              </div>
+            </div>
+
+            <div class="hero-floating-badge hero-badge-2">
+              <i class="fa-solid fa-circle-check" style="color: var(--success); font-size: 1.4rem;"></i>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Focus</div>
+                <div style="font-weight: 700; font-size: 0.88rem;">Data Analysis, AI/ML</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         METRICS COUNTER BAR
+         =============================================================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div id="metrics-grid" class="metrics-grid">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         ABOUT SECTION
+         =============================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> About Me</span>
+          <h2 class="section-title">Building Practical AI Solutions</h2>
+          <p class="section-subtitle">AI/ML Engineer with a strong foundation in Machine Learning, Data Science, and Python.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-text">
+            <p class="cfg-bio-full">
+              <!-- Populated from config.js -->
+            </p>
+            
+            <h4 style="font-size: 1.15rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Career Mission</h4>
+            <p class="cfg-career-goals" style="font-style: italic; color: var(--text-accent);">
+              <!-- Populated from config.js -->
+            </p>
+
+            <div class="about-info-list">
+              <div class="about-info-item"><i class="fa-solid fa-location-dot"></i> <span class="cfg-location">Darbhanga, Bihar, India</span></div>
+              <div class="about-info-item"><i class="fa-solid fa-envelope"></i> <span class="cfg-email">ajit.kumar.aiml@gmail.com</span></div>
+              <div class="about-info-item"><i class="fa-solid fa-briefcase"></i> <span>B.Sc. Mathematics (Pursuing)</span></div>
+              <div class="about-info-item"><i class="fa-solid fa-graduation-cap"></i> <span>AI/ML Engineer</span></div>
+            </div>
+
+            <a href="./assets/files/resume.pdf" download class="btn btn-primary cfg-resume-btn">
+              <i class="fa-solid fa-download"></i> Get Full CV (PDF)
+            </a>
+          </div>
+
+          <div class="about-cta">
+            <a href="#experience" class="btn btn-outline">
+              <i class="fa-solid fa-timeline"></i> View Full Career Timeline
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+          EXPERIENCE SECTION
+          =============================================================== -->
+    <section id="experience" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-timeline"></i> Career Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">A timeline of key roles, research, and engineering milestones in AI/ML.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div id="experience-timeline">
+            <!-- Timeline loaded dynamically from config.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+          SKILLS SECTION
+          =============================================================== -->
+    <section id="skills" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">Comprehensive mastery across modern AI architectures and cloud ecosystems.</p>
+        </div>
+
+        <div class="skills-nav">
+          <button class="skill-tab-btn active" data-skill-category="all">All Skills</button>
+          <button class="skill-tab-btn" data-skill-category="programming">Programming</button>
+          <button class="skill-tab-btn" data-skill-category="dataScience">Data Science</button>
+          <button class="skill-tab-btn" data-skill-category="machineLearning">Machine Learning</button>
+          <button class="skill-tab-btn" data-skill-category="tools">Tools</button>
+          <button class="skill-tab-btn" data-skill-category="deployment">Deployment & MLOps</button>
+        </div>
+
+        <div id="skills-container" class="skills-grid">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         PROJECTS SECTION
+         =============================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Showcase</span>
+          <h2 class="section-title">Featured AI/ML Projects</h2>
+          <p class="section-subtitle">Explore real-world deployments, open-source repositories, and research prototypes.</p>
+        </div>
+
+        <div class="projects-filter-bar">
+          <div class="project-categories">
+            <button class="filter-btn active" data-category="All">All Projects</button>
+            <button class="filter-btn" data-category="LLM & GenAI">LLM & GenAI</button>
+            <button class="filter-btn" data-category="Computer Vision">Computer Vision</button>
+            <button class="filter-btn" data-category="Deep Learning">Deep Learning</button>
+            <button class="filter-btn" data-category="MLOps">MLOps</button>
+            <button class="filter-btn" data-category="Data Science">Data Science</button>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="project-search-input" placeholder="Search by model, tech, key phrase...">
+          </div>
+        </div>
+
+        <div id="projects-grid" class="projects-grid">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         EDUCATION & CERTIFICATIONS
+         =============================================================== -->
+    <section id="certifications" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Verified academic degrees and specialized industry certifications.</p>
+        </div>
+
+        <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem;">Academic Background</h3>
+        <div id="education-grid" class="edu-grid" style="margin-bottom: 3.5rem;">
+          <!-- Populated from config.js -->
+        </div>
+
+        <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem;">Industry Certifications</h3>
+        <div id="certifications-grid" class="cert-grid">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         BLOG PLACEHOLDER SECTION
+         =============================================================== -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-newspaper"></i> Articles & Insights</span>
+          <h2 class="section-title">Technical Blog</h2>
+          <p class="section-subtitle">Deep dives into neural network architectures, optimization tricks, and MLOps strategies.</p>
+        </div>
+
+        <div id="blog-grid" class="blog-grid">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         CONTACT SECTION
+         =============================================================== -->
+    <section id="contact" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-comments"></i> Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have an exciting project, research collaboration, or position in mind?</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <div class="contact-card glass-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Direct Email</div>
+                <a href="mailto:ajit.kumar.aiml@gmail.com" class="cfg-email" style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">ajit.kumar.aiml@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Phone</div>
+                <a href="tel:+917294922080" class="cfg-phone" style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">+91 7294922080</a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Location</div>
+                <div class="cfg-location" style="font-weight: 700; font-size: 1rem;">Darbhanga, Bihar, India</div>
+              </div>
+            </div>
+
+            <div class="glass-card" style="padding: 1.5rem; margin-top: 1rem;">
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem;">Connect Elsewhere</h4>
+              <div class="cfg-social-links hero-socials">
+                <!-- Populated from config.js -->
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="glass-card" style="padding: 2rem;">
+            <input type="text" id="form-honeypot" style="display: none;" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email Address *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. sarah@techcorp.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="e.g. AI Engineering Collaboration">
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Tell me about your project, timeline, or scope..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===============================================================
+       FOOTER
+       =============================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="./index.html" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="nav-logo-icon"><i class="fa-solid fa-brain"></i></div>
+            <span><span class="cfg-first-name">Ajit</span><span style="color: var(--text-accent);">.AI</span></span>
+          </a>
+          <p style="color: var(--text-secondary); max-width: 380px; font-size: 0.95rem;">
+            AI/ML Engineer focused on building practical, data-driven solutions across Machine Learning, Generative AI, NLP, and LLM-based applications.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Quick Navigation</h4>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Connect</h4>
+          <div class="cfg-social-links hero-socials">
+            <!-- Populated from config.js -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="copyright-year">2026</span> Ajit Kumar. Hosted on GitHub Pages.</div>
+        <div style="font-size: 0.82rem;">Designed with <i class="fa-solid fa-heart" style="color: var(--error);"></i> for AI/ML Excellence</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Case Study / Reader Popup -->
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="./config.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/typing.js"></script>
+  <script src="./assets/js/filter.js"></script>
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/config-loader.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
