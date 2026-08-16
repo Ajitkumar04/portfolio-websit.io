@@ -61,11 +61,11 @@ const PORTFOLIO_CONFIG = {
   // Metrics Bar (Hero stats)
   // ----------------------------------------------------------------
   metrics: [
-    { icon: "fa-solid fa-brain", value: "6+", label: "Years Experience" },
-    { icon: "fa-solid fa-rocket", value: "24+", label: "Models Deployed" },
-    { icon: "fa-solid fa-project-diagram", value: "15+", label: "AI Projects" },
-    { icon: "fa-solid fa-graduation-cap", value: "M.S. AI", label: "Stanford University" },
-    { icon: "fa-solid fa-cloud", value: "10M+", label: "Inference Requests" }
+    { icon: "fa-solid fa-brain", value: "Fresher", label: "Professional Experience" },
+    { icon: "fa-solid fa-rocket", value: "5+", label: "Models Built" },
+    { icon: "fa-solid fa-project-diagram", value: "3+", label: "AI Projects" },
+    { icon: "fa-solid fa-graduation-cap", value: "AI/ML", label: "Certification" },
+    { icon: "fa-solid fa-cloud", value: "1000+", label: "Data Records Analyzed" }
   ],
 
   // ----------------------------------------------------------------
