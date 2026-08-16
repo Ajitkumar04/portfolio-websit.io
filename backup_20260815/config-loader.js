@@ -211,10 +211,24 @@
     }
 
     // 9. CERTIFICATIONS RENDERER
-    // Certifications are now handled by assets/js/cert-renderer.js (AGENT 3)
-    // which reads from assets/js/cert-data-manager.js (AGENT 1).
-    // AGENT 2 (cert-upload-manager.js) and AGENT 4 (cert-edit-manager.js)
-    // provide add/edit/delete/verify functionality.
+    const certContainer = document.querySelector('#certifications-grid');
+    if (certContainer && cfg.certifications) {
+      certContainer.innerHTML = cfg.certifications.map(cert => `
+        <div class="cert-card glass-card animate-on-scroll">
+          <div class="cert-icon"><i class="${cert.badgeIcon || 'fa-solid fa-certificate'}"></i></div>
+          <div style="flex-grow: 1;">
+            <h3 class="cert-title">${cert.title}</h3>
+            <div class="cert-issuer">${cert.issuer} &bull; Issued ${cert.date}</div>
+            ${cert.credentialId ? `<div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">ID: ${cert.credentialId}</div>` : ''}
+            ${cert.image ? `<div style="margin-bottom: 0.75rem;"><img src="${cert.image}" alt="${cert.title} Certificate" class="cert-preview-img" loading="lazy" referrerPolicy="no-referrer"></div>` : ''}
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              ${cert.image ? `<a href="${cert.image}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="font-size: 0.78rem; padding: 0.3rem 0.75rem;"><i class="fa-solid fa-eye"></i> View Certificate</a>` : ''}
+              ${cert.verifyUrl ? `<a href="${cert.verifyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="font-size: 0.78rem; padding: 0.3rem 0.75rem;"><i class="fa-solid fa-check-double"></i> Verify Credential</a>` : ''}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
 
     // 10. BLOG PLACEHOLDERS
     const blogContainer = document.querySelector('#blog-grid');

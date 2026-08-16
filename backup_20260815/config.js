@@ -141,6 +141,14 @@ const PORTFOLIO_CONFIG = {
   // ----------------------------------------------------------------
   certifications: [
     {
+      title: "Google Cloud Professional ML Engineer",
+      issuer: "Google Cloud",
+      date: "November 2019",
+      credentialId: "GCP-MLE-2019-4471",
+      verifyUrl: "https://cloud.google.com/certification/verify/GCP-MLE-2019-4471",
+      badgeIcon: "fa-brands fa-google"
+    },
+    {
       title: "Hugging Face LLM Course — Fundamentals of LLMs",
       issuer: "Hugging Face",
       date: "August 2026",

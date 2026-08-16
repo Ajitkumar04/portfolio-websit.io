@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -315,11 +315,8 @@
         </div>
 
         <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem;">Industry Certifications</h3>
-        <button id="cert-manage-btn" class="btn btn-outline btn-sm cert-manage-btn">
-          <i class="fa-solid fa-gear"></i> Manage Certificates
-        </button>
         <div id="certifications-grid" class="cert-grid">
-          <!-- Populated by cert-renderer.js (AGENT 3) -->
+          <!-- Populated from config.js -->
         </div>
       </div>
     </section>
@@ -466,19 +463,6 @@
     </div>
   </div>
 
-  <!-- Certificate Management Modal (AGENT 2 & AGENT 4) -->
-  <div id="cert-management-modal" class="cert-management-modal" aria-hidden="true">
-    <div class="cert-modal-container">
-      <button id="cert-modal-close" class="cert-modal-close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      <div class="cert-modal-tabs">
-        <button class="cert-modal-tab active" data-cert-tab="add">Add Certificate</button>
-        <button class="cert-modal-tab" data-cert-tab="list">Manage Certificates</button>
-      </div>
-      <div id="cert-form-container"></div>
-      <div id="cert-list-container" style="margin-top: 1.5rem;"></div>
-    </div>
-  </div>
-
   <!-- Back To Top Button -->
   <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to Top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -491,10 +475,6 @@
   <script src="./assets/js/filter.js"></script>
   <script src="./assets/js/contact.js"></script>
   <script src="./assets/js/config-loader.js"></script>
-  <script src="./assets/js/cert-data-manager.js"></script>
-  <script src="./assets/js/cert-renderer.js"></script>
-  <script src="./assets/js/cert-upload-manager.js"></script>
-  <script src="./assets/js/cert-edit-manager.js"></script>
   <script src="./assets/js/main.js"></script>
   <script>
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
